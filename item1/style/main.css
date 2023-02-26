@@ -5,14 +5,17 @@
     box-sizing: border-box;
 }
 
-body {
+body, html {
     /* font-family: 'Rambla', sans-serif; */
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 16px;
     font-style: normal;
     color: #000000;
+
+    overflow-x: hidden;
 }
+
 
 /* HEADER */
 
@@ -64,7 +67,9 @@ body {
     margin-right: 0;
 }
 
+
 /* MAIN */
+
 .main {
     position: relative;
 }
@@ -130,7 +135,6 @@ body {
     cursor: pointer;
 }
 
-
 .small-catalog__item:nth-child(2) {
     margin-right: 96px;
 }
@@ -144,7 +148,6 @@ body {
     font-weight: 600;
     font-size: 25px;
     line-height: 30px;
-
     margin: 30px 0 11px;
 }
 
@@ -154,9 +157,11 @@ body {
     color: #333333;
 }
 
+
 /* catalog */
+
 .section-title__catalog {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 45px;
     line-height: 53px;
     margin-bottom: 93px;
@@ -169,12 +174,11 @@ body {
     gap: 70px 36px;
 }
 
-.card a{
+.card a {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
     font-family: 'Rambla', sans-serif;
     font-style: normal;
     transition: .3s linear;
@@ -200,13 +204,71 @@ body {
     color: #333333;
 }
 
-.section-button__wrapper {
-
-}
-
 .more__button {
     display: block;
     letter-spacing: 4px;
     margin: 75px auto 118px;
     padding: 23px 110px;
+}
+
+.section-title__tips {
+    margin-bottom: 130px;
+    line-height: 53px;
+}
+
+
+.advice-container {
+    max-width: 1622px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.separate-advice__left  {
+    transform: translateX(50%);
+    transition: 1s linear all;
+    opacity: 0;
+
+    margin-bottom: 62px;
+}
+
+.separate-advice__right  {
+    transform: translateX(-50%);
+    transition: 1s linear all;
+    opacity: 0;
+
+    margin-bottom: 62px;
+}
+
+.middle {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+.advice-text__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.left {
+    flex-direction: row-reverse;
+}
+
+.advice-text {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 167%;
+    color: #000000;
+    margin: 0 100px 0 85px;
+}
+
+.contacts {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.section-title__cotacts {
+    margin: 125px 0 60px;
 }
