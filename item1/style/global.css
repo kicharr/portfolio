@@ -1,0 +1,8 @@
+::-webkit-scrollbar — это фон самого скроллбара.
+body::-webkit-scrollbar-button {
+    display: none;
+}
+::-webkit-scrollbar-track — пустое пространство под индикатором прокрутки.
+::-webkit-scrollbar-thumb {
+    padding: ;
+}

@@ -1,0 +1,38 @@
+.header {
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+.catalog-cards__wrapper  {
+    float: right;
+    width: 75%;
+}
+
+.select-params {
+    float: left;
+    width: 25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: none;
+}

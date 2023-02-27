@@ -33,26 +33,32 @@
     <div class="header__container">
         <header class="header">
             <div class="header-logo__wrapper">
-                <p class="header-logo">plant</p>
+                <a href="./index.html">
+                    <p class="header-logo">plant</p>
+                </a>
             </div>
             <ul class="header-links__list">
                 <li>
-                    <a href="#" class="header-link">Каталог</a>
+                    <a href="./catalog.html" class="header-link">Каталог</a>
                 </li>
                 <li>
-                    <a href="#" class="header-link">Советы по уходу</a>
+                    <a href="#advice" class="header-link">Советы по уходу</a>
                 </li>
                 <li>
                     <a href="#" class="header-link">Оплата и доставка</a>
                 </li>
                 <li>
-                    <a href="#" class="header-link">О нас</a>
+                    <a href="#contacts" class="header-link">О нас</a>
                 </li>
             </ul>
 
             <div class="action-icons__wrapper">
+                <div id="search-action__wrapper">
+                    <input type="text" class="search-input" placeholder="Что вы ищите?" id="search-input">
+                    <button class="search-button" id="serach-button">Найти!</button>
+                </div>
                 <button href="#" class="action-icon">
-                    <img src="./assets/icons/search-icon.svg" alt="Icon" class="header-icon">
+                    <img src="./assets/icons/search-icon.svg" id="showSearchBtn" alt="Icon" class="header-icon">
                 </button>
                 <a href="#" class="action-icon">
                     <img src="./assets/icons/account-icon.svg" alt="Icon" class="header-icon">
@@ -63,9 +69,12 @@
             </div>
 
         </header>
+        <!-- <div class="authorization">
+            
+        </div> -->
     </div>
     <main class="main">
-        <div class="content-container">
+        <div class="content__container">
             <section class="main-info">
                 <img src="./assets/images/main-bg.jpg" alt="Main Image" class="bg-img">
                 <div class="main-content__wrapper">
@@ -213,7 +222,7 @@
                 <h2 class="section-title section-title__tips">
                     Советы по уходу
                 </h2>
-                <div class="advice-container">
+                <div class="advice__container" id="advice">
 
                     <div class="separate-advice separate-advice__left" id="separate-advice">
                         <div class="advice-text__wrapper ">
@@ -229,7 +238,9 @@
                         <div class="advice-text__wrapper left">
                             <img class="advice-number " src="./assets/images/2.svg " alt="Number ">
                             <p class="advice-text ">
-                                Поливают расстения отстоявшейся водой комнатной температуры. Летом поливают ежеднево вечером, зимой — реже и по утрам. Лейку держут сбоку, чтобы струя воды не вымывала почву.
+                                Поливают расстения отстоявшейся водой комнатной температуры. Летом поливают ежеднево
+                                вечером, зимой — реже и по утрам. Лейку держут сбоку, чтобы струя воды не вымывала
+                                почву.
                             </p>
                             <img src="./assets/images/advice2.png " alt="Advice 2 ">
                         </div>
@@ -239,7 +250,8 @@
                         <div class="advice-text__wrapper ">
                             <img class="advice-number " src="./assets/images/3.svg " alt="Number ">
                             <p class="advice-text ">
-                                Рыхлят палочкой поверхность почвы в горшочке, чтобы к корням поступал воздух. Рыхлить надо осторожно, чтобы не повредить корни растения.
+                                Рыхлят палочкой поверхность почвы в горшочке, чтобы к корням поступал воздух. Рыхлить
+                                надо осторожно, чтобы не повредить корни растения.
                             </p>
                             <img src="./assets/images/advice3.png " alt="Advice 3">
                         </div>
@@ -267,18 +279,80 @@
 
                 </div>
             </section>
-            <section class="cotacts">
+            <section class="cotacts" id="contacts">
                 <h2 class="section-title section-title__cotacts">
                     Как нас найти
                 </h2>
-                <div class="bg-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.7004745404724!2d49.16432351604446!3d55.78107379727845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415ead991a81c051%3A0xac73b98e06385cf5!2z0YPQuy4g0JrRgNCw0YHQvdC-0Lkg0J_QvtC30LjRhtC40LgsIDM1LCDQmtCw0LfQsNC90YwsINCg0LXRgdC_LiDQotCw0YLQsNGA0YHRgtCw0L0sIDQyMDA3Mw!5e0!3m2!1sru!2sru!4v1677433637431!5m2!1sru!2sru" width="1822" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="contacts-content__wrapper">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.7004745404724!2d49.16432351604446!3d55.78107379727845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415ead991a81c051%3A0xac73b98e06385cf5!2z0YPQuy4g0JrRgNCw0YHQvdC-0Lkg0J_QvtC30LjRhtC40LgsIDM1LCDQmtCw0LfQsNC90YwsINCg0LXRgdC_LiDQotCw0YLQsNGA0YHRgtCw0L0sIDQyMDA3Mw!5e0!3m2!1sru!2sru!4v1677433637431!5m2!1sru!2sru"
+                        width="1822" height="800" style="border:0;" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                    <div class="info-block">
-                        
+                    <div class="contacts-info">
+                        <h2 class="header-logo contacts-logo">
+                            plant
+                        </h2>
+
+                        <div class="contacts-wrap loc-wrap">
+                            <img src="./assets/icons/location.svg" class="contacts-icon map-icon" alt="Location">
+                            <p class="contants-text">
+                                г. Казань, ул. Красной позиции д. 35 , оифс 13
+                            </p>
+                        </div>
+                        <div class="contacts-wrap mail-wrap">
+                            <img src="./assets/icons/send.svg" class="contacts-icon mail-icon" alt="Mail">
+                            <p class="contants-text">
+                                plant@icloud.com
+                            </p>
+                        </div>
+                        <div class="contacts-wrap phone-wrap">
+                            <img src="./assets/icons/phone.svg" class="contacts-icon phone-icon" alt="Phone">
+                            <p class="contants-text">
+                                +7 (952) 999 34 23
+                            </p>
+                        </div>
+                        <div class="contacts-wrap clock-wrap">
+                            <img src="./assets/icons/clock.svg" class="contacts-icon clock-icon" alt="Time">
+                            <p class="contants-text">
+                                Каждый день с 08:00 по 17:00
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
+            <footer class="footer">
+                <div class="footer-bg"></div>
+                <div class="links__wrap">
+                    <ul class="footer-links">
+                        <li>
+                            <a href="#" class="footer-link">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Советы по уходу</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Оплата и доставкау</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="footer-info">
+                        <div class="footer-info__left">
+                            <h2 class="header-logo footer-logo">plant</h2>
+                            <p class="footer-text">
+                                © 2022 магазин цветов и растений PLANT
+                            </p>
+                        </div>
+                        <div class="footer-info__right">
+                            <input type="email" placeholder="e-mail" class="footer-input-email">
+                            <button class="main-button footer-button">ПОДПИСАТЬСЯ</button>
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
         </div>
     </main>
 
