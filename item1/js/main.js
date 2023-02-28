@@ -32,21 +32,6 @@ function showSearchBlock() {
     }
 }
 
-$(function () {
-    let header = $('.header');
-    let hederHeight = header.height(); // вычисляем высоту шапки
+let modalQuestion = document.getElementById('more__button').addEventListener('click', ()=> alert('Вы переходите на страницу каталога наших товаров!'));
 
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 1) {
-            header.addClass('header_fixed');
-            $('body').css({
-                'paddingTop': hederHeight + '100px' // делаем отступ у body, равный высоте шапки
-            });
-        } else {
-            header.removeClass('header_fixed');
-            $('body').css({
-                'paddingTop': 100 // удаляю отступ у body, равный высоте шапки
-            })
-        }
-    });
-});
+// 

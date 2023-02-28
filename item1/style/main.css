@@ -15,6 +15,20 @@ html {
     color: #000000;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    scrollbar-color: #6969dd ;
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+    width: 15px;  
+}
+::-webkit-scrollbar-track {
+    background-color: rgb(221, 221, 221);
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(188, 188, 188);
+    border-radius: 15px;
+    width: 10px;
 }
 
 
@@ -24,6 +38,7 @@ html {
     max-width: 1822px;
     width: 100%;
     margin: 40px auto;
+    padding: 0 20px;
 }
 
 .header {
@@ -115,6 +130,7 @@ html {
     max-width: 1822px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .main-content__wrapper {
@@ -237,12 +253,18 @@ html {
     color: #333333;
 }
 
-.more__button {
-    display: block;
+.section-button__wrapper {
+    display: flex;
+}
+
+#more__button {
+    display: inline-block;
     letter-spacing: 4px;
+    color: #FFFFFF;
     margin: 75px auto 118px;
     padding: 23px 110px;
 }
+
 
 .section-title__tips {
     margin-bottom: 130px;
@@ -346,7 +368,7 @@ html {
 /* footer */
 .footer {
     position: relative;
-    padding: 146px 47px 140px 50px;
+    padding: 47px 70px 50px;
     color: #FFFFFF;
 
     margin: 100px 0 0 0 ;
@@ -358,14 +380,14 @@ html {
     background: #333434;
     width: 100vw;
     height: 100%;
-    margin-left: calc(47% - 50vw);
+    margin-left: calc(46% - 50vw);
     top: 0;
 }
 
 .footer-links {
     display: flex;
     margin-bottom: 193px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .footer-link {
@@ -384,7 +406,7 @@ html {
 }
 
 .footer-text {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 125%;
 }
 
@@ -395,7 +417,7 @@ html {
 
 .footer-input-email {
     padding: 28px 200px 28px 29px;
-    font-size: 25px;
+    font-size: 20px;
     background-color: transparent;
     border: 2px solid #FFFFFF;
 }
@@ -416,6 +438,6 @@ html {
     background-color: #FFFFFF;
     color: #000000;
     padding: 25px 52px;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 30px;
 }
