@@ -15,8 +15,8 @@ html {
     color: #000000;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    scrollbar-color: #6969dd ;
-    scrollbar-width: thin;
+    
+    height: 100vh;
 }
 
 ::-webkit-scrollbar {
@@ -415,7 +415,7 @@ html {
     display: flex;
 }
 
-.footer-input-email {
+.footer-email__input {
     padding: 28px 200px 28px 29px;
     font-size: 20px;
     background-color: transparent;

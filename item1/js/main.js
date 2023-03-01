@@ -32,6 +32,13 @@ function showSearchBlock() {
     }
 }
 
-let modalQuestion = document.getElementById('more__button').addEventListener('click', ()=> alert('Вы переходите на страницу каталога наших товаров!'));
+let modalQuestion = document.getElementById('more__button').addEventListener('click', () => alert('Вы переходите на страницу каталога наших товаров!'));
 
-// 
+// Рассылка Email
+function subscribeNewsLetter() {
+    const mailingList = document.getElementById('footer-email__input');
+    const sendEmail = document.getElementById('sendEmail').addEventListener('click', subscribeNewsLetter)
+    // проверка на инпут
+
+    alert('Спасибо, что подписались! Теперь вы будете получать новости о наших новых товарах!')
+}
