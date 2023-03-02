@@ -32,13 +32,38 @@ function showSearchBlock() {
     }
 }
 
-let modalQuestion = document.getElementById('more__button').addEventListener('click', () => alert('Вы переходите на страницу каталога наших товаров!'));
+let modalQuestion = document.getElementById('more__button').addEventListener('click', () => alert.apply('Вы переходите на страницу каталога наших товаров!'));
 
 // Рассылка Email
-function subscribeNewsLetter() {
-    const mailingList = document.getElementById('footer-email__input');
-    const sendEmail = document.getElementById('sendEmail').addEventListener('click', subscribeNewsLetter)
-    // проверка на инпут
 
-    alert('Спасибо, что подписались! Теперь вы будете получать новости о наших новых товарах!')
+let footerInput = document.getElementById('footerInput');
+let sendEmail = document.getElementById('sendEmail').addEventListener('click',followSendMail);
+
+
+
+function followSendMail() {
+    let userEmail = footerInput.value;
+    const ERROR = 'К сожалению произошла ошибка, повторите ещё раз!';
+    const SUCCESS = `${userEmail}` + ' — на эту почту теперь будут приходить свежие обновления о наших товарах!';
+
+    if(userEmail == null || userEmail == undefined || userEmail == '') {
+        alert(ERROR);
+        console.log('К сожалению произошла ошибка, повторите ещё раз! Попробуйте написать свою почту!');    
+    } else {
+        alert(SUCCESS); 
+    }
 }
+
+
+// const payLink = document.getElementById('payLink').addEventListener('click', addErrorPage);
+
+// function addErrorPage() {
+
+//     if(payLink.getAttribute('href') == "#") {
+//         payLink.setAttribute('href', "http://127.0.0.1:5500/item1/ErrorPage.html");
+//     } else {
+//         console.log('attr fill');
+//     }
+
+//     // console.log(payLink);
+// }
