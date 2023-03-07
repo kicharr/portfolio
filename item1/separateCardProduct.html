@@ -18,12 +18,16 @@
     <link rel="stylesheet" href="./assets/fonts/Rambla/Rambla-Regular.ttf">
 
 
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
 
     <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/catalog.css">
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/separateProduct.css">
 
 
-<!-- Выводить название выбранной карточки -->
+    <!-- Выводить название выбранной карточки -->
     <title>Plant | </title>
 </head>
 
@@ -68,17 +72,68 @@
 
         </header>
         <main class="main">
-            <section class="catalog" id="catalog">
-                <div class="card">
-                    <a href="#" class="catalog-card__link">
-                        <img src="./assets/images/card-1.png" class="catalog-card" alt="Catalog Image">
-                        <p class="catalog-card__text">
-                            Фикусы
-                        </p>
-                        <p class="catalog-card__name">
-                            Аихризон (Дерево любви)
-                        </p>
-                    </a>
+            <section class="payment-window" id="payment-window">
+                <div class="modal-btn__wrapper">
+                    <button id="closeModalPay" class="close-modal">
+                        <img class="close-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/1200px-VisualEditor_-_Icon_-_Close_-_white.svg.png" alt="Close Modal" width="50px" height="50px" >
+                    </button>
+                </div>
+               
+                <h3 class="modal-title">Зполните данные, для того, чтобы с вами связался наш специалист.</h3>
+                <p id="test1"></p>
+            </section>
+            <section class="separarte-product" id="separate-product">
+                <div class="separate-product__wrapper">
+                    <div class="images-product__wrapper product-images__slider">
+                        <div class="photo-product">
+                            <img src="./assets/images/card-1.png" class="product-images" alt="Catalog Image">
+                        </div>
+                        <div class="photo-product">
+                            <img src="./assets/images/card-1.png" class="product-images" alt="Catalog Image">
+                        </div>
+                    </div>
+                    <div class="description__wrapper">
+                        <div class="prodcut-name">
+                            <p class="product-name__text">
+                                Фикус
+                            </p>
+                        </div>
+                        <div class="product-type">
+                            <p class="product-type__text">
+                                Аихризон (Дерево любви)
+                            </p>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-info__text">
+                                Аихризон (Aichryson) еще именуют «дерево любви». Он имеет прямое отношение к роду суккулентных растений, которые входят в состав семейства толстянковые. Такое растение предпочитает расти в трещинах скал. В природе его можно повстречать на Канарских и Азорских островах, на Мадейре, в Португалии и Марокко. Данный род объединяет 15 видов, среди которых имеются травянистые многолетние и однолетние растения и полукустарники. Название такого цветка образуется от 2 греческих слов, а именно: аi – «всегда» и chrysos – «золотой». Аихризон имеет явное сходство с близкородственным ему денежным деревом.
+
+                                Побеги у аихризона частично разветвлены и почти не одревесневают. Супротивно расположенные ворсистые листочки обладают округло-яйцевидной формой, при этом они собраны в листовые розетки. Окрас листовой пластины темно-зеленый либо зеленый, иногда присутствуют вкрапления желтого, белого, серого и красного цвета. От поврежденной листовой пластины исходит не очень приятный запах. Листочки имеют форму сердца, поэтому такое растение и именуют «дерево любви». Метельчатые либо щитковидные соцветия состоят из маленьких цветочков звездчатой формы, которые могут иметь белый, красный либо кремовый окрас. Цветение наблюдается в апреле либо мае. После того как растение отцветет, его листовая розетка, давшая цветонос, отмирает. В домашних условиях аихризон выращивают в качестве штамбового деревца либо простого кустика.
+                            </p>
+                        </div>
+
+
+                        <div class="choose-size__wrapper">
+                            <label for="small">
+                                Small
+                                <input type="checkbox" name="small" />
+                            </label>
+                            <label for="medium">
+                                Medium
+                                <input type="checkbox" name="medium" />
+                            </label>
+                            <label for="Large">
+                                Large
+                                <input type="checkbox" name="large" />
+                            </label>
+                          
+                        </div>
+                        <div class="buttons-pay__wrapper">
+                            <button class="main-button  pay-btn" id="payBtn">Купить!</button>
+                            <button class="main-button  add-card-btn" id="addCardBtn">Добавить в корзину</button>
+                        </div>
+
+
+                    </div>
                 </div>
             </section>
         </main>
@@ -117,7 +172,10 @@
     </div>
 
     <script src="./js/main.js"></script>
-    <script src="./js/catalog.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
+    <script src="./js/separateProduct.js"></script>
 </body>
 
 </html>

@@ -58,10 +58,8 @@ function displayOptions() {
     // console.log('this.value>>', this.value);
 }
 
-
-
-
 searchInput.addEventListener('change', displayOptions);
 searchInput.addEventListener('keyup', displayOptions);
 
-// 
+
+

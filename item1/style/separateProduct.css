@@ -1,0 +1,169 @@
+.separarte-product {
+    width: 100%;
+}
+
+.separate-product__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.product-images {
+    max-width: 400px;
+    height: 500px;
+}
+
+/* Слайдер */
+.slick-slider {
+    max-width: 400px;
+    height: 500px;
+    width: 100%;
+
+}
+
+/* Слайдер запущен */
+.slick-slider.slick-initialized {}
+
+/* Слайдер с точками */
+.slick-slider.slick-dotted {}
+
+/* Ограничивающая оболочка */
+.slick-list {}
+
+/* Лента слайдов */
+.slick-track {}
+
+/* Слайд */
+.slick-slide {}
+
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {}
+
+/* Слайд основной */
+.slick-slide.slick-current {}
+
+/* Слайд по центру */
+.slick-slide.slick-center {}
+
+/* Клонированный слайд */
+.slick-slide.slick-cloned {}
+
+/* Стрелка */
+.slick-arrow {}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {}
+
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {}
+
+/* Точки (булиты) */
+.slick-dots {}
+
+.slick-dots li {}
+
+/* Активная точка */
+.slick-dots li.slick-active {}
+
+/* Элемент точки */
+.slick-dots li button {}
+
+
+.description__wrapper {
+    /* max-width: 700px; */
+    width: 100%;
+    margin-left: 20px;
+}
+
+.prodcut-name {
+    margin-bottom: 20px;
+}
+
+.product-type {
+    margin-bottom: 20px;
+}
+
+.product-name__text {
+    font-size: 45px;
+    font-weight: 500;
+
+}
+
+.product-type__text {
+    font-size: 30px;
+    color: #4d4c4c;
+}
+
+.product-info__text {
+    font-size: 18px;
+    line-height: 140%;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.pay-btn {
+    margin: 0 10px;
+}
+
+.buttons-pay__wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Окно оплаты */
+body {
+    position: relative;
+}
+
+.main {
+    position: unset;
+}
+
+.payment-window {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+
+    transform: translate(100%);
+    transition: .5s ease-in-out all;
+
+    max-width: 30vw;
+    min-width: 30vw;
+    height: 100%;
+    background-color: #4d4c4c;
+
+    padding: 10px 15px;
+
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 400;
+}
+
+.modal-btn__wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close-icon {
+    background-color: #4d4c4c;
+}
+
+.modal-title {
+    font-size: 30px;
+    color: #ffffff;
+    margin: 10px 0;
+    text-align: left;
+}
+
+/* Кастомынй чек-бокс, выбор размера */
+
+.choose-size__wrapper  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px 0;
+}

@@ -15,16 +15,18 @@ html {
     color: #000000;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    
+
     height: 100vh;
 }
 
 ::-webkit-scrollbar {
-    width: 15px;  
+    width: 15px;
 }
+
 ::-webkit-scrollbar-track {
     background-color: rgb(221, 221, 221);
 }
+
 ::-webkit-scrollbar-thumb {
     background-color: rgb(188, 188, 188);
     border-radius: 15px;
@@ -94,18 +96,19 @@ html {
 
 .search-input {
     display: inline-block;
-    border: 2px solid #000000;
+    border: 2px solid #4D4C4C;
     padding: 10px 15px;
     font-size: 18px;
 }
 
 .search-button {
-    background-color: #000000;
+    background-color: #4D4C4C;
     color: #FFFFFF;
     font-size: 18px;
     padding: 12px 10px;
     margin-right: 20px;
 }
+
 /* .authorization {
     width: 500px;
     height: 500px;
@@ -136,10 +139,11 @@ html {
     margin-bottom: 30px;
 }
 
-.error-button  {
+.error-button {
     font-size: 35px !important;
     padding: 30px 50px !important;
 }
+
 /* MAIN */
 
 .main {
@@ -395,7 +399,7 @@ html {
     padding: 47px 70px 50px;
     color: #FFFFFF;
 
-    margin: 100px 0 0 0 ;
+    margin: 100px 0 0 0;
 }
 
 .footer-bg {
@@ -464,4 +468,211 @@ html {
     padding: 25px 52px;
     font-size: 20px;
     line-height: 30px;
+}
+
+.iframe {
+    min-width: 1822px;
+    height: 800px;
+}
+
+
+@media (max-width: 1024px) {
+
+    .header__container {
+        margin: 20px auto;
+    }
+
+    .header-logo {
+        font-size: 35px;
+    }
+
+    .header-links__list {
+        font-size: 16px;
+    }
+
+    .header-icon {
+        max-width: 20px;
+        height: 20pxx;
+    }
+
+    .main-content__wrapper {
+        padding: 78px 0 0 90px;
+        margin-bottom: 90px;
+    }
+
+    .main-info {
+        margin-bottom: 65px;
+    }
+
+    .section-title {
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 40px;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    .section-text {
+        margin-bottom: 15px;
+    }
+
+    .main-button {
+        font-size: 14px;
+    }
+
+    .small-catalog__item {
+        margin-right: 20px;
+    }
+
+    .small-catalog__item:nth-child(2) {
+        margin-right: 30px;
+    }
+
+    .item-name {
+        font-size: 20px;
+        margin: 20px 0 11px;
+    }
+
+    .item-description {
+        font-size: 14px;
+    }
+
+    /* catalog */
+    .section-title__catalog {
+        margin-bottom: 40px;
+    }
+
+    .catalog-cards__wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        overflow: hidden;
+        gap: 35px 25px;
+    }
+
+    .card {
+        max-width: 350px;
+        width: 100%;
+        height: 500px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+
+    .catalog-card__name {
+        margin: 0;
+    }
+
+    .catalog-card__text {
+        margin: 15px 0;
+    }
+
+    .media1024 {
+        display: none;
+    }
+
+    #more__button {
+        margin: 40px auto 75px;
+        padding: 23px 110px;
+    }
+
+    .tips img {
+        max-width: 500px;
+    }
+
+    .advice-text {
+        font-size: 16px;
+        margin: 0 50px 0 50px;
+    }
+
+    .advice-number {
+        max-width: 70px !important;
+        height: 100px;
+    }
+
+    .separate-advice__left {
+        margin-bottom: 40px;
+    }
+
+    .separate-advice__right {
+        margin-bottom: 40px;
+    }
+
+    .advice-text__wrapper {
+        margin: 0;
+    }
+
+    .section-title__cotacts {
+        margin: 15px 0 30px;
+    }
+
+    .iframe {
+        min-width: 1024px;
+        height: 600px;
+    }
+
+    .contacts-info {
+        top: 120px;
+        left: 60px;
+        padding: 50px 30px;
+        width: auto;
+    }
+
+    .contacts-logo {
+        font-size: 25px;
+    }
+
+    .contacts-wrap {
+        margin-top: 25px;
+    }
+
+    .contants-text {
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+    .contacts-icon {
+        max-width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    .footer {
+        font-size: 16px;
+        padding: 37px 0 50px;
+        margin-top: 45px;
+    }
+
+    .footer-bg {
+        margin-left: calc(42% - 42vw);
+    }
+
+    .footer-links {
+        display: flex;
+        margin-bottom: 50px;
+        font-size: 16px;
+    }
+    .footer-info {
+        align-items: center;
+    }
+    .footer-info__right {
+        height: 70px;
+    }
+    .footer-button {
+        padding: 0px 20px;
+    }
+
+    .footer-email__input {
+        padding: 0px 40px 2px 20px;
+        font-size: 16px;
+    }
+
+    .footer-logo {
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    .footer-text {
+        font-size: 16px;
+    }
 }

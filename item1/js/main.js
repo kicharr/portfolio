@@ -13,7 +13,6 @@ let options = {
 };
 let observer = new IntersectionObserver(onEntry, options);
 let elements = document.querySelectorAll('.separate-advice');
-
 for (let elm of elements) {
     observer.observe(elm);
 }
@@ -22,7 +21,6 @@ for (let elm of elements) {
 
 
 document.getElementById("showSearchBtn").addEventListener("click", showSearchBlock);
-
 function showSearchBlock() {
     let searchBlock = document.getElementById('search-action__wrapper');
     if (!searchBlock.style.cssText || searchBlock.style.cssText === "display: none;") {
@@ -37,7 +35,7 @@ let modalQuestion = document.getElementById('more__button').addEventListener('cl
 // Рассылка Email
 
 let footerInput = document.getElementById('footerInput');
-let sendEmail = document.getElementById('sendEmail').addEventListener('click',followSendMail);
+let sendEmail = document.getElementById('sendEmail').addEventListener('click', followSendMail);
 
 
 
@@ -46,11 +44,11 @@ function followSendMail() {
     const ERROR = 'К сожалению произошла ошибка, повторите ещё раз!';
     const SUCCESS = `${userEmail}` + ' — на эту почту теперь будут приходить свежие обновления о наших товарах!';
 
-    if(userEmail == null || userEmail == undefined || userEmail == '') {
+    if (userEmail == null || userEmail == undefined || userEmail == '') {
         alert(ERROR);
-        console.log('К сожалению произошла ошибка, повторите ещё раз! Попробуйте написать свою почту!');    
+        console.log('К сожалению произошла ошибка, повторите ещё раз! Попробуйте написать свою почту!');
     } else {
-        alert(SUCCESS); 
+        alert(SUCCESS);
     }
 }
 
