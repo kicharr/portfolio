@@ -65,3 +65,6 @@ function followSendMail() {
 
 //     // console.log(payLink);
 // }
+
+
+// тестовая карта
